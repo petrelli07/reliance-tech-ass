@@ -15,3 +15,5 @@
 -For game-plays, this was simulated by choosing a start date for the 3835 days of gaming and running it in a loop. a while loop was run inside the same for loop to simulate the game plays. 
 -Users in the game play were chosen by their ids at random
 -All these were seeded to create all the results
+
+-Access the app on heroku using this as base url: https://rocky-savannah-66952.herokuapp.com/
