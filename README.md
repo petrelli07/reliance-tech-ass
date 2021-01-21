@@ -1,7 +1,7 @@
 ## Instalation Instruction
 
 -Clone the repository from this repository : https://github.com/petrelli07/reliance-tech-ass
--Create a .env file and enter your database credentials
+-Create a .env file using the .env.example template and enter your database credentials
 -Run composer install command
 -Run php artisan:migrate
 -Run php artisan db:seed
