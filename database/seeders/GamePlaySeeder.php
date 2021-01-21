@@ -35,10 +35,10 @@ class GamePlaySeeder extends Seeder
         $playerGameData = [];
         $userData = [];
 
-        for($i = 1; $i <= 100;  $i++){//for loop for number of days of gaming
+        for($i = 1; $i <= 3836;  $i++){//for loop for number of days of gaming
             
             $x=1;
-            while($x < 10){ //while loop for number of games per day
+            while($x < 1550){ //while loop for number of games per day
 
 
                 $userId = $this->getRandomUser();
