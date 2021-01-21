@@ -1,24 +1,17 @@
-# Lumen PHP Framework
+## Instalation Instruction
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
+-Clone the repository from this repository : https://github.com/petrelli07/reliance-tech-ass
+-Create a .env file and enter your database credentials
+-Run composer install command
+-Run php artisan:migrate
+-Run php artisan db:seed
+-Make sure php of version PHP >= 7.3 is installed locally
+-Run php -S localhost:{your preferred port} -t public
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
-
-## Official Documentation
-
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Explanation of App Logic
+-The following tables were created and seeded: players,games,player-games,game-plays
+-The player-games held data for the games the players has access to and the version as well
+-All these are seeded and entered automatically into the database
+-For game-plays, this was simulated by choosing a start date for the 3835 days of gaming and running it in a loop. a while loop was run inside the same for loop to simulate the game plays. 
+-Users in the game play were chosen by their ids at random
+-All these were seeded to create all the results
