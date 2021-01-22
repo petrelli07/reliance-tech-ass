@@ -18,16 +18,21 @@ class GamePlaySeeder extends Seeder
      */
     
     public function getRandomUser(){
-    
         
-        $randomId = rand(1,10000);
+        $randomId = rand(1,1000);
 
+        $multiply = $randomId * 10;
+        
+        if($randomId == 1){
+            $userId = $randomId;
+        }
 
-        //$playerGameData = Player::find($randomUserId)->games()->get();
+        $userId = $multiply + 1;
 
-        return $randomId;
+        return $userId;
 
     }
+
 
     public function run()
     {
