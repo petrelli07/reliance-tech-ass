@@ -28,7 +28,7 @@ class PlayerFactory extends Factory
             'nickname'=> $this->faker->unique()->username.$currentTimeStamp,
             'dateJoined'=>$this->faker->dateTimeBetween('-100 days', '+100 days'),
             'lastLogin'=>$this->faker->dateTimeBetween('-20 days', '+20 days'),
-            'email' => $this->faker->username.$currentTimeStamp,
+            'email' => $this->faker->username.$currentTimeStamp.'@gmail.com',
             'password'=>Hash::make('password')
         ];
     }

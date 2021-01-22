@@ -17,7 +17,7 @@ class PlayerGameSeeder extends Seeder
      */
     public function run()
     {
-        $allGames = Game::inRandomOrder()->limit(5)->get();
+        $allGames = Game::all();
         $players = Player::all();
 
 
