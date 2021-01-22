@@ -16,7 +16,7 @@ class CreatePlayersTable extends Migration
         Schema::create('players', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email')->unique();
+            $table->string('email',200)->unique();
             $table->string('nickname')->unique();
             $table->string('password');
             $table->date('dateJoined');
