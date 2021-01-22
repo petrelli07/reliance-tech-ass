@@ -26,7 +26,7 @@ class PlayerFactory extends Factory
         $randomfigure = rand(1,20);
         return [
             'name' => $this->faker->name,
-            'nickname'=> $this->faker->unique()->username.$currentTimeStamp.$rand,
+            'nickname'=> $this->faker->unique()->username.$currentTimeStamp.$randomfigure,
             'dateJoined'=>$this->faker->dateTimeBetween('-100 days', '+100 days'),
             'lastLogin'=>$this->faker->dateTimeBetween('-20 days', '+20 days'),
             'email' => $this->faker->username.$currentTimeStamp.'@gmail.com',
