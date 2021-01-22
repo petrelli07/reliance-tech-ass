@@ -18,8 +18,7 @@ class GamePlaySeeder extends Seeder
      */
     
     public function getRandomUser(){
-        
-        $randomId = rand(1,1000);
+        $randomId = rand(1,9991);
 
         $multiply = $randomId * 10;
 
