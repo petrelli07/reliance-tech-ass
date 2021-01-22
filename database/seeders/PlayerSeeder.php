@@ -17,7 +17,7 @@ class PlayerSeeder extends Seeder
     {
         $player = Player::factory()->count(1000)->make();
 
-        $chunks = $player->chunk(5);
+        $chunks = $player->chunk(100);
 
         $chunks->each(function ($chunk) {
             Player::insert($chunk->toArray());
