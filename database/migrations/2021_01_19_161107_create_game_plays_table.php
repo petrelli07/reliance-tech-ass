@@ -20,7 +20,7 @@ class CreateGamePlaysTable extends Migration
             $table->unsignedBigInteger('game_id');
             $table->foreign('game_id')->references('id')->on('games');
             $table->date('datePlayed');
-            $table->json('coPlayers')->nullable();
+            $table->string('coPlayers')->nullable();
             $table->timestamps();
         });
     }
