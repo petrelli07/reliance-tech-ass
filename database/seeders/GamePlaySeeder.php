@@ -22,8 +22,8 @@ class GamePlaySeeder extends Seeder
         $randomId = rand(1,1000);
 
         $multiply = $randomId * 10;
-        
-        if($randomId == 1){
+
+        if($randomId == 1 || 10){
             $userId = $randomId;
         }
 
