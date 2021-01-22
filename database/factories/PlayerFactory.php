@@ -22,12 +22,13 @@ class PlayerFactory extends Factory
      */
     public function definition()
     {
+        $currentTimeStamp = time();
         return [
             'name' => $this->faker->name,
-            'nickname'=> $this->faker->unique()->username,
+            'nickname'=> $this->faker->unique()->username.$currentTimeStamp,
             'dateJoined'=>$this->faker->dateTimeBetween('-100 days', '+100 days'),
             'lastLogin'=>$this->faker->dateTimeBetween('-20 days', '+20 days'),
-            'email' => $this->faker->unique()->safeEmail,
+            'email' => $this->faker->username.$currentTimeStamp,
             'password'=>Hash::make('password')
         ];
     }
