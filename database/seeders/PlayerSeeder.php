@@ -15,7 +15,7 @@ class PlayerSeeder extends Seeder
      */
     public function run()
     {
-        $player = Player::factory()->count(10000)->make();
+        $player = Player::factory()->count(2000)->make();
 
         $chunks = $player->chunk(100);
 
