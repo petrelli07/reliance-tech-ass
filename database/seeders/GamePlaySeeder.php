@@ -20,7 +20,7 @@ class GamePlaySeeder extends Seeder
     public function getRandomUser(){
     
         
-        $randomId = rand(1,10000);
+        $randomId = rand(200,100000);
 
 
         //$playerGameData = Player::find($randomUserId)->games()->get();
