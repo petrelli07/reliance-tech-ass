@@ -28,7 +28,7 @@ class PlayerGameSeeder extends Seeder
                         "player_id"=>$player->id,
                         "game_id"=>$allGame->id
                     ]
-                    );
+                );
             }
         }
     }
