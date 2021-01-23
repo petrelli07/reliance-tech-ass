@@ -18,7 +18,7 @@ class GamePlaySeeder extends Seeder
      */
     
     public function getRandomUser(){
-        $randomId = rand(1,9991);
+        $randomId = rand(1,999);
 
         $multiply = $randomId * 10;
 
@@ -47,7 +47,7 @@ class GamePlaySeeder extends Seeder
 
                 $userId = $this->getRandomUser();
                 
-                $playerGameData = Player::find(11)->games()->inRandomOrder()->limit(1)->get();
+                $playerGameData = Player::find($userId)->games()->inRandomOrder()->limit(1)->get();
 
                 $currentDate = date("Y-m-d",strtotime("+".$i."days",strtotime("2013-02-28")));
                 
