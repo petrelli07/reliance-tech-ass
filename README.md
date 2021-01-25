@@ -17,3 +17,5 @@
 - All these were seeded to create all the results
 
 - Access the app on heroku using this as base url: https://rocky-savannah-66952.herokuapp.com/
+
+- Postman Collection Documentation: https://www.getpostman.com/collections/d2c53342d94aa787f266
